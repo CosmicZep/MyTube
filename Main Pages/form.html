@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./form.css">
+        <script src="https://kit.fontawesome.com/3dd79392ee.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;1,300;1,400&display=swap" rel="stylesheet">         
+        <title>MyTube</title>
+    </head>
+    <body>
+        <div class="header">
+            <header>
+                <div class="header-profile">
+                    <img 
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREEp7fZtj2xwfdVkdQSgmvTwNqSoUeIv1_keEV_xNO-A&s" 
+                        alt="profile picture"
+                    >
+                    <h4>Saxton's Collection</h4>
+                    <button>Subscribe</button>
+                </div>
+                <h1>MyTube</h1>
+                <input type="text" placeholder="Search..."> 
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </header>
+        </div>
+        <div class="wrapper">
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li><a href="./pages/cars.html"><i class="fa-solid fa-car"></i>Cars</a></li>
+                        <li><a href="./pages/gaming.html"><i class="fa-solid fa-gamepad"></i>Gaming</a></li>
+                        <li><a href="./pages/stand-up.html"><i class="fa-solid fa-face-laugh-squint"></i>Stand-Up</a></li>
+                        <li><a href="./form.html"><i class="fa-solid fa-upload"></i>Upload</a></li>
+                    </ul>    
+                </nav>
+            </div>
+        </div>
+        <div class="main-content">
+            <header>
+                <h2>Add a New Video</h2>
+            </header>
+            <form 
+                autocomplete="off"
+                action="./submitted.html"
+                target="_blank"
+                method="get"
+            >
+                <label for="title">
+                    <strong>Video Title*</strong>
+                </label>
+                <br>
+                <br>
+                <input 
+                    type="text"
+                    name="title"
+                    id="title"
+                    size="47"
+                    placeholder="Enter Video Title"
+                    required
+                >
+                <br>
+                <br>
+                <br>
+                <label for="description"><strong>Description*</strong></label>
+                <br>
+                <br>
+                <textarea
+                    name="description"
+                    id="description"
+                    rows="8"
+                    cols="40"
+                    placeholder="Enter Video Description (500 Char. Max)"
+                    maxlength="500"
+                    required
+                ></textarea>
+                <br>
+                <br>
+                <br>
+                <label for="upload"><strong>Upload File*</strong></label>
+                <br>
+                <br>
+                <input 
+                    type="file"
+                    name="upload"
+                    id="upload"
+                >
+                <br>
+                <br>
+                <br>
+                <select name="collection" id="collection-select">
+                    <option value="none">Choose Collection</option>
+                    <option value="car-vids">Car Videos</option>
+                    <option value="gaming-vids">Gaming Videos</option>
+                    <option value="comedy-vids">Comedy Clips</option>
+                </select>
+                <br>
+                <br>
+                <input
+                    type="radio"
+                    name="privacy"
+                    id="public"
+                    value="public"
+                >
+                <label for="privacy">Public</label>
+                <input
+                    type="radio"
+                    name="privacy"
+                    id="private"
+                    value="private"
+                >
+                <label for="privacy">Private</label>
+                <br>
+                <br>
+                <input 
+                    type="submit" 
+                    name="" 
+                    id=""
+                >
+            </form>
+        </div>
+        <hr>
+        <footer>
+            <h4>This is a collection of other creators work</h4>
+            <h5>All videos are linked to the original source</h5>
+            &copy: Copyright
+            <address>
+                123 Main St, Dallas, Tx
+            </address>
+        </footer>
+    </body>
+</html>
